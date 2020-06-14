@@ -7,14 +7,20 @@
 body {
     background-image: radial-gradient(grey, black);
     background-repeat: no-repeat;
-    height: calc(100vh);
-    width: calc(100vw);
+    height: 100vh;
+    width: 100vw;
     overflow: hidden;
     font-family: 'Muli', sans-serif;
 }
 
+header {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 main {
-    padding-top: 5em;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -26,6 +32,33 @@ footer {
     bottom: 0;
     left: 0;
     padding: 2em;
+}
+
+/*
+
+    Links
+
+*/
+
+header > .links {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    color: white;
+}
+
+header > .links > * {
+    margin-left: 1em;
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+header > .links > *:first-child {
+    width: 10em;
+}
+
+header > .links > *:last-child {
+    width: 6em;
 }
 
 /*
