@@ -1,0 +1,52 @@
+/*
+
+    General styling
+
+*/
+
+body {
+    background-image: radial-gradient(grey, black);
+    background-repeat: no-repeat;
+    height: calc(100vh);
+    width: calc(100vw);
+    overflow: hidden;
+    font-family: 'Muli', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/*
+
+    Titles
+
+*/
+
+.brand {
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+}
+
+.brand > * {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+/*
+
+    Shapes
+
+*/
+
+.circle {
+    width: 30vw;
+    height: 30vw;
+    background: white;
+    border-radius: 50%
+}
+
